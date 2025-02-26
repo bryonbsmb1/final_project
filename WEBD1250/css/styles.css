@@ -1,0 +1,117 @@
+
+body {
+    padding-top: 5rem;
+}
+
+/* added padding  */
+.starter-template {
+    padding: 3rem 1.5rem;
+}
+/* google Fonts */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+
+
+.form-label::after {
+    content: " *";
+    font-weight: bold;
+    color: rgb(9, 244, 119);
+}
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+}
+.form-control {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+.form-check-input {
+    margin-right: 15px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f2f2f2;
+}
+
+main {
+  padding: 80px 15px; /* Added padding to account for fixed navbar */
+}
+/* SERVICES PAGE STYLING */
+
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin-top: 70px;
+}
+
+/* Grid for skills cards, modified 2/23 per professor  */
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /*I used grid template w/ auto-fit and minmax so each service card adapts to space 2/23 */
+    gap: 20px;
+    padding: 20px;
+}
+
+/* card styeling*/
+.service_card {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
+.service_card img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+.service_card h2 {
+    font-size: .85rem;
+    margin: 10px 0;
+}
+
+.service_card p {
+    font-size: 1rem;
+    color: #333;
+}
+
+.service_card figcaption {
+    font-size: 0.3rem;
+    color: #777;
+}
+
+
+@media (max-width: 1000px) {
+    /* I changed background color for service cards */
+    .service_card {
+    background: #e0f7fa;
+    }
+    /* I adjusted the main h2 heading style */
+    h2 {
+    font-size: 2rem;
+    text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .services {
+        grid-template-columns: 1fr;
+    }
+    .service_card h2 {
+        font-size: 1.5rem;
+    } /*added stying to service_card h2*/
+}
